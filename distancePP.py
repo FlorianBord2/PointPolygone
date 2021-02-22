@@ -19,7 +19,6 @@ def display(A,B,C,P):
     y = A[1], B[1], C[1]
     z = A[2], B[2], C[2]
     verts = [list(zip(x, y, z))]
-    print(verts)
     ax.add_collection3d(Poly3DCollection(verts))
     #draw text
     ax.scatter(P[0], P[1], P[2], color="r")
