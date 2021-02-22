@@ -1,6 +1,6 @@
 Install 
 `python3 -m venv venv`
-`pip3 install -r requirement`
+`pip3 install -r requirement.txt`
 `source venv/bin/activate`
 
 Then run :
