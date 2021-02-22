@@ -40,14 +40,17 @@ def calcul_distance(position, point):
 def main():
     if len(sys.argv) == 2:
         if sys.argv[1] == "-m":
-            first_point = input("Give me your 'A' triangle point like 'x,y,z'\n")
-            second_point = input("Now your 'B' triangle point like 'x,y,z'\n")
-            third_point = input("And then 'C' point like 'x,y,z'\n")
-            point = input("And finnaly give me your 'D' point, the one outside the triangle, like 'x,y,z'\n")
-            A = [float(x) for x in first_point.split(',')]
-            B = [float(x) for x in second_point.split(',')]
-            C = [float(x) for x in third_point.split(',')]
-            P = [float(x) for x in point.split(',')]
+            first_point = input("Give me your 'A' triangle point like 'x y z'\n")
+            second_point = input("Now your 'B' triangle point like 'x y z'\n")
+            third_point = input("And then 'C' point like 'x y z'\n")
+            point = input("And finnaly give me your 'D' point, the one outside the triangle, like 'x y z'\n")
+            A = [float(x) for x in first_point.split(' ')]
+            B = [float(x) for x in second_point.split(' ')]
+            C = [float(x) for x in third_point.split(' ')]
+            P = [float(x) for x in point.split(' ')]
+        else:
+            print("Try 'python3 distancePP.py -m'")
+            return 
     else:
         A = [4, 2, 1]
         B = [-3, 2, -3]
